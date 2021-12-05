@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurante</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a class="logo" href="index.html">
+                    <h1>La top Burger</h1>
+                </a>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="sobre.html">Sobre</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="container">
+                <form id="formSearch" action="">
+                    <input type="text" placeholder="O QUE DESEHA COMER HOJE?" name="inputSearch" id="inputSearch">
+                </form>
+            </div>
+
+        </section>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Pratos</h2>
+            <section class="pratos" id="product-div">
+              
+            </section>
+        </div>
+       <div class="modal hide">
+           <form action="#" class="modal-form" id="form-product">
+               <div class="form-group">
+                   <label for="title">Prato</label>
+                   <input type="text" name="title" id="title" class="form-control" placeholder="opção 01" required>
+               </div>
+               <div class="form-group">
+                   <label for="quantidade">Quantidade</label>
+                   <input type="number" name="quantidade" id="quantidade" class="form-control" placeholder="ex 01" required min="1">
+               </div>
+               <div class="form-group">
+                   <label for="name">Nome</label>
+                   <input type="text" name="name" id="name" class="form-control" placeholder="Digite seu nome" required>
+               </div>
+               <div class="form-group">
+                   <label for="endereco">Endereço</label>
+                   <input type="text" name="Endereco" id="endereco" class="form-control" placeholder="Endereço" required>
+               </div>
+               <div class="form-group">
+                   <label for="pagamento">Pagamento</label>
+                   <select name="pagamento" id="pagamento" class="form-control" required>
+                       <option value="dinheiro">Dinheiro</option>
+                       <option value="cartao">Cartao de credito</option>
+                   </select>
+               </div>
+
+               <div class="btn-group">
+                   <button type="submit" class="btn btn-success">Finalizar pedido</button>
+                   <button type="submit" class="btn btn-danger" onclick="modalTrigger()">Cancelar</button>
+               </div>
+           </form>
+       </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Desenvolvido por Alan .R</p>
+        </div>
+    </footer>
+
+    <script src="produtos.js"></script>
+<script src="app.js"></script>
+
+</body>
+
+</html>
